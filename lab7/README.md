@@ -26,3 +26,4 @@ This lab introduces Django Models and the Django ORM for interacting with a rela
 
 \- Routes: `/books/simple/query`, `/books/complex/query`, `/books/my/query`, `/books/cheap/query`
 
+
