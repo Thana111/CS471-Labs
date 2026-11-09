@@ -20,3 +20,4 @@ This lab covers core HTML/CSS concepts: links, text formatting, nested lists, an
 
 \- All pages inherit the shared layout from `base.html`.
 
+
