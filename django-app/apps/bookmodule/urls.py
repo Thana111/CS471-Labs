@@ -10,4 +10,10 @@ urlpatterns = [
     path('html5/listing', views.listing_page, name="books.listing"),
     path('html5/tables', views.tables_page, name="books.tables"),
     path('<int:bookId>/', views.viewbook, name="books.view_one_book"),
+    path('search', views.search),
+    path('simple/query', views.simple_query, name="books.simple_query"),
+    path('complex/query', views.complex_query, name="books.complex_query"),
+    path('my/query', views.my_new_query, name="books.my_query"),
+    path('cheap/query', views.cheap_books, name="books.cheap_query"),
+    path('index2/<int:val1>/', views.index2, name="books.index2"),
 ]
