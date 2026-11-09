@@ -20,3 +20,4 @@ This lab focuses on building a consistent site layout using HTML, CSS, and Djang
 
 \- Implemented the `list\_books` page, displaying books with their cover images and links to their detail pages.
 
+
