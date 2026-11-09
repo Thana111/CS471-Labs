@@ -20,3 +20,4 @@ This lab introduces URL routing, view functions, and template rendering in Djang
 
 \- Implemented `viewbook`, a dynamic view that displays book details based on the book ID passed in the URL.
 
+
