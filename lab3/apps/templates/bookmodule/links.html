@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block title %}Links{% endblock title %}
+{% block content %}
+<style>
+.linkbox { padding: 20px; text-align: center; display: block; }
+#link1 { background-color: lightgreen; color: red; }
+#link2 { background-color: dimgray; color: yellow; }
+#link3 { background-color: black; color: white; }
+a:visited { color: purple; }
+a:hover { opacity: 0.8; }
+a:active { color: orange; }
+</style>
+<a id="link1" class="linkbox" href="https://www.qu.edu.sa" target="_blank">Go to QU website (open a new tab)</a>
+<a id="link2" class="linkbox" href="https://www.qu.edu.sa">Go to QU website (open in the same page/tab)</a>
+<a id="link3" class="linkbox" href="https://www.qu.edu.sa">Go to QU website (open in the same page/tab)</a>
+{% endblock content %}
