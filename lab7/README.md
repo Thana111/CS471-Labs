@@ -1,29 +1,17 @@
-\# Lab 7 — Django Models (Part 1)
+# Lab 7 — Django Models & ORM Queries
 
+## Overview
+This lab covers Django Models (Part 1): defining a model, running migrations, inserting data, and querying the database with the Django ORM.
 
+## What was implemented
+- Task 1 — `Book` model (`title`, `author`, `price`, `edition`) in `apps/bookmodule/models.py`, with `makemigrations` / `migrate` applied
+- Task 2 — Sample data inserted via the Django shell using `Book.objects.create(...)`
+- Task 3 — `simple_query` (`/books/simple/query`) — `Book.objects.filter(title__icontains='and')`
+- Task 4 — `complex_query` (`/books/complex/query`) — chained `filter()`/`exclude()` with `isnull`, `icontains`, `gte`, `lte` lookups and slicing
+- Extra — two additional self-made queries: `my_query` (`/books/my/query`) and `cheap_query` (`/books/cheap/query`)
 
-\## Overview
-
-This lab introduces Django Models and the Django ORM for interacting with a relational database.
-
-
-
-\## What was implemented
-
-\- Defined a `Book` model in `models.py` with fields: `title`, `author`, `price`, and `edition`.
-
-\- Generated and applied database migrations (`makemigrations`, `migrate`) to create the corresponding database table.
-
-\- Inserted sample book records through the Django shell.
-
-\- `simple\_query` — a basic ORM query using `filter()` to find books whose title contains "and".
-
-\- `complex\_query` — a multi-condition query combining `filter()` and `exclude()` (author not null, title contains "and", edition ≥ 2, price above 100).
-
-\- `my\_query` — a custom query returning books whose title contains the letter "a", with a price of 100 or less and an edition of 2 or higher.
-
-\- `cheap\_books` — a custom query returning all books priced under 110, sorted from cheapest to most expensive using `order\_by('price')`.
-
-\- Routes: `/books/simple/query`, `/books/complex/query`, `/books/my/query`, `/books/cheap/query`
-
-
+## URLs to test
+- `/books/simple/query`
+- `/books/complex/query`
+- `/books/my/query`
+- `/books/cheap/query`
